@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Intro section with dropdown navigation</title>
+
+</head>
+<body>
+
+  <nav>
+
+    <div class="nav-header">
+      <img src="./images/logo.svg" alt="logo">
+      <button class="nav-toggle">
+        <img src="./images/icon-menu.svg" alt="">
+      </button>
+    </div>
+
+    <div class="nav">
+      <div class="nav-links">
+        <img src="./images/logo.svg" alt="">
+        <ul class="info-links">
+          <div class="js-drop drop">
+            <li class="drop-title"><a href="#">Features <span><img class="js-arrow" src="./images/icon-arrow-down.svg" alt=""></span></a></li>
+            
+            <ul class=" js-uldrop uldrop">
+              <li><a href="#"><span class="icon"><img src="./images/icon-calendar.svg" alt=""></span> Calendar</a></li>
+              <li><a href="#"><span class="icon"><img src="./images/icon-reminders.svg" alt=""></span> Reminders</a></li>
+              <li><a href="#"><span class="icon"><img src="./images/icon-todo.svg" alt=""></span> Todo List</a></li>
+              <li><a href="#"><span class="icon"><img src="./images/icon-planning.svg" alt=""></span> Planning</a></li>
+            </ul>
+          </div>
+          <div class="js-drop drop">
+            <li class="drop-title"><a href="#">Company <span><img class="js-arrow" src="./images/icon-arrow-down.svg" alt=""></span></a></li>
+            <ul class="js-uldrop uldrop">
+              <li><a href="#">History</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
+      <div class="nav-btns">
+        <button class="btn login-btn">Login</button>
+        <button class="btn register-btn">Register</button>
+      </div>
+    </div>
+
+  </nav>
+
+  <aside class="sidebar">
+    <button class="close-btn">
+      <img src="./images/icon-close-menu.svg" alt="">
+    </button>
+    <ul class="links">
+      <div class="js-drop">
+        <li>
+          <a class="dropdown-menu" href="#">Features <span><img class="js-arrow"  src="./images/icon-arrow-down.svg" alt=""></span></a>
+          <ul class="js-uldrop dropdown">
+              <li class="dropdown-item"><a href="#"><span><img src="./images/icon-todo.svg" alt=""></span> Todo List</a></li>
+              <li class="dropdown-item"><a href="#"><span><img src="./images/icon-calendar.svg" alt=""></span> Calendar</a></li>
+              <li class="dropdown-item"><a href="#"><span><img src="./images/icon-reminders.svg" alt=""></span> Reminders</a></li>
+              <li class="dropdown-item"><a href="#"><span><img src="./images/icon-planning.svg" alt=""></span> Planning</a></li>
+          </ul>
+        </li>
+      </div>
+      <div class="js-drop">
+        <li>
+          <a class="dropdown-menu" href="#">Company <span><img class="js-arrow" src="./images/icon-arrow-down.svg" alt=""></span></a>
+          <ul class="js-uldrop dropdown">
+              <li class="dropdown-item"><a href="#">History</a></li>
+              <li class="dropdown-item"><a href="#">Our Team</a></li>
+              <li class="dropdown-item"><a href="#">Blog</a></li>
+          </ul>
+        </li>
+      </div>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+    <div class="btn-container">
+      <button class="btn login-btn">Login</button>
+      <button class="btn register-btn">Register</button>
+    </div>
+  </aside>
+
+  <main>
+
+    <section>
+
+      <div class="introduction-wrapper">
+        <img class="mobile-hero" src="./images/image-hero-mobile.png" alt="hero">
+        <div class="introduction">
+          <h1>
+              Make remote work
+          </h1>
+          <p>
+              Get your team in sync, no matter your location. Streamline processes, 
+              create team rituals, and watch productivity soar.
+          </p>
+          <button class="learn-btn">Learn more</button>
+          
+        </div>
+        <div class="sponsors">
+          <img src="./images/client-databiz.svg" alt="databiz logo">
+          <img src="./images/client-audiophile.svg" alt="audiophile logo">
+          <img src="./images/client-meet.svg" alt="meet logo">
+          <img src="./images/client-maker.svg" alt="maker logo">
+        </div>
+      </div>
+      <img class="desktop-hero" src="./images/image-hero-desktop.png" alt="hero">
+
+    </section>
+
+  </main>
+  <script src="./app.js"></script>
+</body>
+</html>
